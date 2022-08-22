@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Middleware;
+namespace Support\Packages\Laravel\Middlewares;
 
 use Illuminate\Http\Middleware\TrustHosts as Middleware;
 

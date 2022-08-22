@@ -1,26 +1,22 @@
 <?php
 
-namespace App\Auth\Controllers;
+namespace App\Api\Auth\Controllers;
 
-use App\Auth\Requests\RegisterRequest;
-use App\Auth\Resources\UserResource;
+use App\Api\Auth\Requests\LoginRequest;
+use App\Api\Auth\Resources\UserResource;
 use Domain\Auth\Actions\Login;
-use Domain\Auth\Actions\Register;
 use Domain\Auth\DataTransferObjects\LoginData;
-use Domain\Auth\DataTransferObjects\RegisterData;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller;
 
-class RegisterController extends Controller
+class LoginController extends Controller
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    public function __invoke(RegisterRequest $request)
+    public function __invoke(LoginRequest $request)
     {
-        $user = app(Register::class)->handle(RegisterData::fromRequest($request));
-
         [$user, $jwt] = app(Login::class)->handle(LoginData::fromRequest($request));
 
         return response()->json([

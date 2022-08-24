@@ -953,16 +953,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v9.25.1",
+            "version": "v9.26.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "e8af8c2212e3717757ea7f459a655a2e9e771109"
+                "reference": "1ccfb91afee7a351b09ba1f1b97739096a3ad1cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/e8af8c2212e3717757ea7f459a655a2e9e771109",
-                "reference": "e8af8c2212e3717757ea7f459a655a2e9e771109",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/1ccfb91afee7a351b09ba1f1b97739096a3ad1cf",
+                "reference": "1ccfb91afee7a351b09ba1f1b97739096a3ad1cf",
                 "shasum": ""
             },
             "require": {
@@ -1129,7 +1129,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-08-16T16:36:05+00:00"
+            "time": "2022-08-23T19:00:07+00:00"
         },
         {
             "name": "laravel/sanctum",
@@ -5314,16 +5314,16 @@
     "packages-dev": [
         {
             "name": "archtechx/enums",
-            "version": "v0.3.0",
+            "version": "v0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/archtechx/enums.git",
-                "reference": "7e17b844510c0087868b20f12f8556191caf4501"
+                "reference": "373a86a16e7233a56dd942d422af2cc59a2becb3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/archtechx/enums/zipball/7e17b844510c0087868b20f12f8556191caf4501",
-                "reference": "7e17b844510c0087868b20f12f8556191caf4501",
+                "url": "https://api.github.com/repos/archtechx/enums/zipball/373a86a16e7233a56dd942d422af2cc59a2becb3",
+                "reference": "373a86a16e7233a56dd942d422af2cc59a2becb3",
                 "shasum": ""
             },
             "require": {
@@ -5354,9 +5354,9 @@
             "description": "Helpers for making PHP enums more lovable.",
             "support": {
                 "issues": "https://github.com/archtechx/enums/issues",
-                "source": "https://github.com/archtechx/enums/tree/v0.3.0"
+                "source": "https://github.com/archtechx/enums/tree/v0.3.1"
             },
-            "time": "2022-03-29T18:34:54+00:00"
+            "time": "2022-08-24T22:27:44+00:00"
         },
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -6565,16 +6565,16 @@
         },
         {
             "name": "laravel-lang/lang",
-            "version": "11.0.13",
+            "version": "11.0.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/lang.git",
-                "reference": "50f97b588cd40f22d733768e5969a025558200ad"
+                "reference": "2b92ea429a679cfb4dd6350179be4263272340bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/50f97b588cd40f22d733768e5969a025558200ad",
-                "reference": "50f97b588cd40f22d733768e5969a025558200ad",
+                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/2b92ea429a679cfb4dd6350179be4263272340bb",
+                "reference": "2b92ea429a679cfb4dd6350179be4263272340bb",
                 "shasum": ""
             },
             "require": {
@@ -6636,7 +6636,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2022-08-17T08:16:19+00:00"
+            "time": "2022-08-24T08:43:14+00:00"
         },
         {
             "name": "laravel-lang/publisher",

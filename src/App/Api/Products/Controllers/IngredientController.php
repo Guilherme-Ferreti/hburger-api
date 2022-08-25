@@ -8,9 +8,15 @@ use App\Api\Products\Requests\StoreIngredientRequest;
 use App\Api\Products\Resources\IngredientResource;
 use Domain\Products\Actions\StoreIngredient;
 use Domain\Products\DataTransferObjects\IngredientData;
+use Domain\Products\Models\Ingredient;
 
 class IngredientController
 {
+    public function index()
+    {
+        return IngredientResource::collection(Ingredient::all());
+    }
+
     public function store(StoreIngredientRequest $request)
     {
         $ingredient = app(StoreIngredient::class)->handle(IngredientData::fromRequest($request));

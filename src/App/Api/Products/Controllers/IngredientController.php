@@ -7,6 +7,7 @@ namespace App\Api\Products\Controllers;
 use App\Api\Products\Requests\StoreIngredientRequest;
 use App\Api\Products\Requests\UpdateIngredientRequest;
 use App\Api\Products\Resources\IngredientResource;
+use Domain\Products\Actions\DeleteIngredient;
 use Domain\Products\Actions\StoreIngredient;
 use Domain\Products\Actions\UpdateIngredient;
 use Domain\Products\DataTransferObjects\IngredientData;
@@ -31,5 +32,12 @@ class IngredientController
         $ingredient = app(UpdateIngredient::class)->handle($ingredient, IngredientData::fromRequest($request));
 
         return new IngredientResource($ingredient);
+    }
+
+    public function destroy(Ingredient $ingredient)
+    {
+        app(DeleteIngredient::class)->handle($ingredient);
+
+        return response()->noContent();
     }
 }
